@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login page</title>
+    <style>
+        h2{margin-top:300px}
+        form{margin-top:20px}
+    </style>
+</head>
+<body style="background-color:black";>
+<h2 style="color:white;"align="center">login  </h2>
+<form align="center"  action="login" method="post">
+  {% csrf_token %}
+  <input type="text" name="username" placeholder="enter your user number">
+    <br><br>
+  <input type="password" name="password" placeholder="enter your password">
+    <br><br>
+  <input  type="submit">
+
+</form>
+
+</body>
+</html>
